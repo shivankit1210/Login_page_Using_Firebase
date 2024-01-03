@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+// import { getDatabase, ref, set } from "firebase/database";
+import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
+import "./App.css";
+import { app } from "./firebase";
+import SignupPage from "./pages/SignUp";
+import SigninPage from "./pages/SignIn";
+
+
+// const db = getDatabase(app);
+
+const auth= getAuth(app);
 
 function App() {
+
+  // const signupUser=()=>{
+  //  createUserWithEmailAndPassword(auth,
+  // 'shivankit@gmail.com',
+  // 'slka1210').then((value) => console.log(value));
+  // };
+
+  /* This is for checking of our firebase if it connected with our react app or not */
+  // const putData = () => {
+  //   set(ref(db, "user/shivankit"), {
+  //     id: 1,
+  //     name: "SHIVANKIT AGARWAL",
+  //     age: 22,
+  //   });
+  // };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>React app Login tutorial</h1>
+        <SigninPage/>
+       <SignupPage/>
+
+      {/* <button onClick={signupUser}>Create User</button> */}
+     
     </div>
   );
 }
