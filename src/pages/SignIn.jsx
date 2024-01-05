@@ -26,6 +26,7 @@ const SigninPage = () => {
         onChange={(e)=>setEmail(e.target.value)}
         value={email}
         />
+        
         <label>enter your Password</label>
         <input type="password" placeholder="enter your password"
         onChange={(e)=>setpassword(e.target.value)}
