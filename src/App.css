@@ -4,13 +4,20 @@
 }
 
 .container{
-  margin: 50px;
+  margin: 10px;
   padding: 10px;
   border: 2px solid red;
   border-radius: 10px;
   align-items: center;
   display: flex;
   flex-direction: column;  
+
+  .input{
+    display: flex;
+    flex-direction: column;
+    /* margin: 30px; */
+    padding: 20px;
+  }
 }
 .signup-page{
   margin: 10px;
@@ -30,4 +37,22 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+
+.navbar{
+
+
+  .container{
+    background-color: aquamarine;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid greenyellow;
+    border-radius: 0%;
+
+    ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+    }
+  }
 }

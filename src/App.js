@@ -1,9 +1,10 @@
 // import { getDatabase, ref, set } from "firebase/database";
-import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
+import { getAuth } from "firebase/auth";
 import "./App.css";
 import { app } from "./firebase";
 import SignupPage from "./pages/SignUp";
 import SigninPage from "./pages/SignIn";
+import Navbar from "./pages/Navbar";
 
 
 // const db = getDatabase(app);
@@ -29,6 +30,7 @@ function App() {
 
   return (
     <div className="App">
+        <Navbar/>
       <h1>React app Login tutorial</h1>
         <SigninPage/>
        <SignupPage/>
